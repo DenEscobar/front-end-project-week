@@ -37,7 +37,7 @@ class UpdateForm extends Component {
 
     submitHandler = (id)=>{
         axios
-            .put(`http://localhost:9999/api/notes/${id}`, {
+            .put(`https://denise-escobar-notes.herokuapp.com/api/notes/${id}`, {
                 title: this.state.title,
                 textBody: this.state.textBody,
             })

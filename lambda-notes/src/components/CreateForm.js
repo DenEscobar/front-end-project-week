@@ -17,7 +17,7 @@ class CreateForm extends Component {
     submitHandler = e=>{
         e.preventDefault()
         axios
-            .post(`http://localhost:9999/api/notes/`, {
+            .post(`https://denise-escobar-notes.herokuapp.com/api/notes/`, {
                 title: this.state.title,
                 textBody: this.state.textBody,
                 tags: this.state.tags,

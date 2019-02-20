@@ -15,7 +15,7 @@ class UpdateForm extends Component {
         const id =this.props.match.params.id;
         
         axios
-            .get(`http://localhost:9999/api/notes/${id}`)
+            .get(`http://localhost:9999/api/catnotes/${id}`)
             .then(response => {
                 this.setState({
                     title: response.data.title,
@@ -37,7 +37,7 @@ class UpdateForm extends Component {
 
     submitHandler = (id)=>{
         axios
-            .put(`https://denise-escobar-notes.herokuapp.com/api/notes/${id}`, {
+            .put(`https://denise-escobar-notes.herokuapp.com/api/catnotes/${id}`, {
                 title: this.state.title,
                 textBody: this.state.textBody,
             })

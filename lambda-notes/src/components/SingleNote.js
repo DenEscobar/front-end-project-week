@@ -22,7 +22,7 @@ class SingleNote extends Component {
 
     fetchNote = id => {
         axios
-            .get(`https://denise-escobar-notes.herokuapp.com/api/notes/${id}`)
+            .get(`https://denise-escobar-notes.herokuapp.com/api/catnotes/${id}`)
             .then(response => {
                 this.setState(()=>({note: response.data}))
             })
@@ -34,7 +34,7 @@ class SingleNote extends Component {
     deleteHandler=(id)=>{
         return()=>{
             axios
-                .delete(`https://denise-escobar-notes.herokuapp.com/api/notes/${id}`)
+                .delete(`https://denise-escobar-notes.herokuapp.com/api/catnotes/${id}`)
                 .then(response =>{
                     console.log(response)
                 })

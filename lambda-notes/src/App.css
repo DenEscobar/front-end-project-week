@@ -28,36 +28,33 @@ h1{
 }
 
 .noteCard{
-  border: 1px solid black;
-  margin: 10px;
+  border: 2px solid black;
+  margin: 22px;
   padding: 5px;
-  width: 200px;
+  width: 300px;
   height: 250px;
-  overflow: hidden;
+  overflow: auto;
   text-decoration: none;
   color: black;
-  background-color: white;
+  background-color: #7FC7F2;
 }
 
 .noteHeading{
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
+  text-align: center;
 }
 
 .notesBlock{
   display: flex;
   flex-wrap: wrap;
-  
+  max-width: 1080px;
+  margin: 25px auto;
 }
 
-
-.notesTitle{
-  font-size: 30px;
-  font-weight: bold;
-  padding: 50px 0px 10px 10px
-}
 
 .notePara{
   margin-top: 5px;
@@ -120,6 +117,7 @@ a{
   background-color: whitesmoke;
   padding: 20px 10px;
   min-width: 800px;
+  margin: 10px;
 }
 
 .singleDelete{
@@ -142,4 +140,8 @@ a{
   font-weight: bold;
   margin: 20px 0px;;
 
+}
+
+::-webkit-scrollbar-track{
+  background: #7FC7F2
 }

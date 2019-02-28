@@ -14,7 +14,7 @@ class Notes extends Component {
 
     componentDidMount() {
         axios
-            .get('http://localhost:9999/api/notes')
+            .get('https://denise-escobar-notes.herokuapp.com/api/catnotes')
             .then(response => {
                 this.setState(()=>({notes:response.data}));
             })
@@ -27,7 +27,6 @@ class Notes extends Component {
     render(){
         return(
             <div className="notesContent">
-                <h2 className="notesTitle">Your Notes:</h2>
                 <div className="notesBlock">
                 {this.state.notes.map( item => (
                     <Link to={`/note/${item.id}`}>

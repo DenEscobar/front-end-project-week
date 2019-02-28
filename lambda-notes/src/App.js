@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink, Route } from 'react-router-dom'
 import './App.css';
+import headerImg from "./images/header.png"
 
 import Notes from "./components/Notes"
 import CreateForm from './components/CreateForm';
@@ -11,8 +12,10 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <div className="sideMenu">
-          <h1>Lambda Notes</h1>
+        <div className="headerImg">
+          <img src= {headerImg} />
+        </div>
+        <div className="Menu">
           <NavLink to="/" className="menuButton">View Your Notes</NavLink>
           <NavLink to="/create" className="menuButton">+ Create New Note</NavLink>
         </div>

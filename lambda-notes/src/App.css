@@ -1,14 +1,26 @@
 .app{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   margin: 20px auto;
 }
 
-.sideMenu{
+.headerImg{
+  margin: 0px auto;
+}
+
+.headerImg img{
+  width: 80%;
+  display: block;
+  margin: 0px auto;
+}
+
+.Menu{
   margin-left: 10px;
-  background-color: lightgray;
-  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center
 }
 
 h1{
@@ -16,52 +28,51 @@ h1{
 }
 
 .noteCard{
-  border: 1px solid black;
-  margin: 10px;
+  border: 2px solid black;
+  margin: 22px;
   padding: 5px;
-  width: 200px;
+  width: 300px;
   height: 250px;
-  overflow: hidden;
+  overflow: auto;
   text-decoration: none;
   color: black;
-  background-color: white;
+  background-color: #7FC7F2;
 }
 
 .noteHeading{
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
+  text-align: center;
 }
 
 .notesBlock{
   display: flex;
   flex-wrap: wrap;
-  
+  max-width: 1080px;
+  margin: 25px auto;
 }
 
-.notesContent{
-  background-color: whitesmoke; 
-}
-
-.notesTitle{
-  font-size: 30px;
-  font-weight: bold;
-  padding: 50px 0px 10px 10px
-}
 
 .notePara{
   margin-top: 5px;
 }
 
 .menuButton{
-  border: 1px solid turquoise;
-  background-color: turquoise;
+  border: 1px solid #7FC7F2;
+  background-color: #7FC7F2;
   width: 140px;
   padding: 10px;
-  margin-bottom: 10px;
+  margin: 10px 50px;
   text-decoration: none;
-  display: block
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+
 }
 
 a{
@@ -106,6 +117,7 @@ a{
   background-color: whitesmoke;
   padding: 20px 10px;
   min-width: 800px;
+  margin: 10px;
 }
 
 .singleDelete{
@@ -128,4 +140,8 @@ a{
   font-weight: bold;
   margin: 20px 0px;;
 
+}
+
+::-webkit-scrollbar-track{
+  background: #7FC7F2
 }
